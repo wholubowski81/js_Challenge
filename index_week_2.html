@@ -1,0 +1,55 @@
+<!-- Obsługa zdarzeń i zmiana jednostek -->
+<!doctype html>
+
+<html lang="pl">
+
+<head>
+	<title>Przelicznik jednostek miar</title>
+	<meta charset="utf-8" />
+
+	<link rel="stylesheet" href="style_week_2.css" type="text/css"/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+  <div id="titlefield">
+    <h1>PRZELICZNIK MIAR</h1>
+		<br />
+		<h2> Podaj ilość i wybierz jednostki miary</h2>
+  </div>
+	<div class="converter">
+
+	<input type="number" id="inputfield"/>
+	<select id='in-unit'>
+<!-- metr, kilometr, decymetr, centymetr, milimetr, cal, stopa, jard, mila -->
+		<option value='1'>milimetry</option>
+		<option value='10'>centymetry</option>
+		<option value='100'>decymetry</option>
+		<option value='1000'>metry</option>
+		<option value='1000000'>kilometry</option>
+		<option value='25.4'>cale</option>
+		<option value='304.8'>stopy</option>
+		<option value='914.4'>jardy</option>
+		<option value='1609344'>mile</option>
+	</select>
+	<p>
+		zamień na:
+	</p>
+	<select id='out-unit'>
+		<option value='1'>milimetry</option>
+	  <option value='10'>centymetry</option>
+	  <option value='100'>decymetry</option>
+	  <option value='1000'>metry</option>
+	  <option value='1000000'>kilometry</option>
+	  <option value='25.4'>cale</option>
+	  <option value='304.8'>stopy</option>
+	  <option value='914.4'>jardy</option>
+	  <option value='1609344'>mile</option>
+	</select>
+	<div id="resultfield"></div>
+</div>
+
+
+<script type="text/javascript" src="converter-measure.js">  </script>
+</body>
+</html>
